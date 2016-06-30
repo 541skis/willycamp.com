@@ -1,0 +1,68 @@
+ol li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2,
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.hero {
+  background: url('../img/bg.jpg') no-repeat center center #555;
+  background-size: cover;
+}
+
+.hero>h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 5rem;
+  line-height: 6.5rem;
+}
+
+.hero>h1>a:hover {
+  text-decoration: none;
+}
+
+.hero>span {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.slider {
+  border-radius: 3px;
+}
+
+.modal {
+  position: fixed;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.modal.visible {
+  opacity: 1;
+	visibility: visible;
+}
+
+.modal aside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transition: 0.3s;
+  transform: translate(-50%, -50%) scale(0.8);
+  border-radius: 3px;
+  opacity: 0;
+}
+
+.modal.visible aside {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
