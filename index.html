@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="node_modules/ideal-image-slider/ideal-image-slider.css">
     <link rel="stylesheet" href="node_modules/ideal-image-slider/themes/default/default.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
   </head>
   <body>
     <header class="padding-small padding-top-xlarge padding-bottom-xlarge text-center hero">
@@ -32,37 +35,51 @@
 
           <div class="row">
             <div class="column-center max-width-xsmall margin-top-xlarge slider" id="js-slider">
+              <img data-src="img/slider/willy-camp-flag.jpg" alt="Willy Camp">
               <img data-src="img/slider/team-2.jpg" alt="Another Team Photo">
-              <img data-src="img/slider/team-3.jpg" alt="Team Photo">
+              <img data-src="img/slider/nice-view.jpg" alt="Awesome View">
               <img data-src="img/slider/tatum-sl.jpg" alt="Tatum in the Slalom Course">
               <img data-src="img/slider/coaches.jpg" alt="The Brothers">
               <img data-src="img/slider/some-guy-gs.jpg" alt="Guy Running Giant Slalom">
               <img data-src="img/slider/kids-2.jpg" alt="Kids">
-              <img data-src="img/slider/old-guys.jpg" alt="Old Guys">
-              <img data-src="img/slider/willy-face.jpg" alt="Willy Face">
+              <img data-src="img/slider/old-guys.jpg" alt="Old Skiers">
+              <img data-src="img/slider/team-3.jpg" alt="Team Photo">
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="text-center">
         <a id="coaches"></a>
-        <h2 class="padding-top-xlarge text-grey text-center">Top-Notch Coaches</h2>
-        <div class="container padding-bottom-xlarge text-center">
-          <div class="column-3-11 margin-top-large">
-            <img class="circle margin-bottom-small" src="http://placehold.it/150x150" alt="Coach Lloyd" width="150" height="150">
-            <h3 class="text-grey">Lloyd Scroggins</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+        <h2 class="padding-top-xlarge text-grey">Top-Notch Coaches</h2>
+        <div class="container padding-bottom-xlarge">
+          <div class="column-1 column-large-1-2 column-xlarge-1-2">
+            <div class="column-1-2 margin-top-large">
+              <img class="circle margin-bottom-small" src="img/willy.jpg" alt="Coach Willy" width="150" height="150">
+              <h3 class="no-margin text-grey">Willy Scroggins</h3>
+              <span class="font-size-small bold-font">Promotions Manager / Coach</span>
+              <p class="font-size-small">Over 25 years of coaching experience &middot; Masters National Champion &middot; Skiers Edge Masters Championship team member</p>
+            </div>
+            <div class="column-1-2 margin-top-large">
+              <img class="circle margin-bottom-small" src="img/lloyd.jpg" alt="Coach Lloyd" width="150" height="150">
+              <h3 class="no-margin text-grey">Lloyd Scroggins</h3>
+              <span class="font-size-small bold-font">Lead Coach</span>
+              <p class="font-size-small">Over 30 of years coaching experience &middot; Lead FIS coach for several NW ski race programs &middot; Head coach Sakhalin, Russia Ski Federation &middot; Level 400 USSCA coach</p>
+            </div>
           </div>
-          <div class="column-3-11 column-offset-1-11 margin-top-large">
-            <img class="circle margin-bottom-small" src="http://placehold.it/150x150" alt="Coach Willy" width="150" height="150">
-            <h3 class="text-grey">Willy Scroggins</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-          </div>
-          <div class="column-3-11 column-offset-1-11 margin-top-large">
-            <img class="circle margin-bottom-small" src="http://placehold.it/150x150" alt="Coach Jesse" width="150" height="150">
-            <h3 class="text-grey">Jesse Scroggins</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+          <div class="column-1 column-large-1-2 column-xlarge-1-2">
+            <div class="column-1-2 margin-top-large">
+              <img class="circle margin-bottom-small" src="img/jesse.jpg" alt="Coach Jesse" width="150" height="150">
+              <h3 class="no-margin text-grey">Jesse Scroggins</h3>
+              <span class="font-size-small bold-font">Administrator / Coach</span>
+              <p class="font-size-small">Over 30 years of coaching experience &middot; Head coach Cooper Spur Race Team &middot; Head coach MAC Race Team &middot; Masters National Champion &middot; Level 400 USSCA coach</p>
+            </div>
+            <div class="column-1-2 margin-top-large">
+              <img class="circle margin-bottom-small" src="img/hailey.jpg" alt="Coach Hailey" width="150" height="150">
+              <h3 class="no-margin text-grey">Hailey Duke</h3>
+              <span class="font-size-small bold-font">Ladies Camp Coach</span>
+              <p class="font-size-small">Retired USST member &middot; 2009 World Championships / 2010 Olympics &middot; Taekwondo competitor &middot; Inspirational leader</p>
+            </div>
           </div>
         </div>
       </section>
@@ -75,7 +92,7 @@
             <div class="row">
               <div class="column-5-11 margin-top-large">
                 <table class="no-margin">
-                  <caption class="bold-font">Willy Camp<button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="wc">Details</button></caption>
+                  <caption class="bold-font">Willy Camp<button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="willy-camp">Details</button></caption>
                   <tr>
                     <th>Dates</th>
                     <td>July 11th&ndash;15th</td>
@@ -95,7 +112,7 @@
                 </table>
               </div>
 
-              <div class="cover no-padding modal" id="js-modal-wc">
+              <div class="cover no-padding modal" id="js-modal-willy-camp">
                 <aside class="padding-medium max-width-small background-white">
                   <table class="no-margin">
                     <tr>
@@ -122,15 +139,15 @@
 
                   <p><strong>Note:</strong> Meet out on the hill by 7:30. Look for our lane under Willy Camp on the white board at the top of Palmer Chair. Training will continue until 11:00ish or until conditions deteriorate. Bring your own lunch/snacks, lots of water and sunscreen.</p>
 
-                  <div class="margin-top-medium text-center">
-                    <button class="button-primary button-small modal-toggle" data-modal="wc">Sounds Good</button>
+                  <div class="right">
+                    <button class="button-primary button-small modal-toggle" data-modal="willy-camp">Sounds Good</button>
                   </div>
                 </aside>
               </div>
 
               <div class="column-5-11 column-offset-1-11 margin-top-large">
                 <table class="no-margin">
-                  <caption class="bold-font">Ladies Camp<button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="lc">Details</button></caption>
+                  <caption class="bold-font">Ladies Camp<button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="ladies-camp">Details</button></caption>
                   <tr>
                     <th>Dates</th>
                     <td>July 11th&ndash;15th</td>
@@ -150,12 +167,12 @@
                 </table>
               </div>
 
-              <div class="cover no-padding modal" id="js-modal-lc">
+              <div class="cover no-padding modal" id="js-modal-ladies-camp">
                 <aside class="center padding-medium max-width-small background-white">
                   <p><strong>Note:</strong> This camp is for Masters only. It will be lead by USST member Haily Duke. Please ping <a href="mailto:contact@willycamp.com">contact@willycamp.com</a> with any questions.</p>
 
-                  <div class="margin-top-medium text-center">
-                    <button class="button-primary button-small modal-toggle" data-modal="lc">Sounds Good</button>
+                  <div class="right">
+                    <button class="button-primary button-small modal-toggle" data-modal="ladies-camp">Sounds Good</button>
                   </div>
                 </aside>
               </div>
@@ -215,7 +232,7 @@
               <div class="margin-top-large text-center">
                 <div class="button-group">
                   <button class="button-large warning" type="reset">Reset</button>
-                  <button class="button-large button-inverse padding-left-medium padding-right-medium" id="js-form-submit-button" type="submit">Register</button>
+                  <button class="button-large button-inverse padding-left-medium padding-right-medium" id="js-form-submit-button" type="submit">Submit</button>
                 </div>
               </div>
             </form>

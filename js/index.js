@@ -84,7 +84,7 @@
     }
 
     window[callback] = function(data) {
-      formSubmitButton.innerHTML = 'Resgister Another';
+      formSubmitButton.innerHTML = 'Submit Another';
       formSubmitButton.disabled = false;
 
       delete window[callback];

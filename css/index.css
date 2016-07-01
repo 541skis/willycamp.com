@@ -1,4 +1,5 @@
-ol li {
+ol>li,
+ul>li {
   margin-left: 0;
   margin-right: 0;
 }
