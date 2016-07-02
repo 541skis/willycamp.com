@@ -4,8 +4,10 @@ ul>li {
   margin-right: 0;
 }
 
+h1,
 h2,
 h3 {
+  color: #555;
   font-family: 'Work Sans', sans-serif;
   letter-spacing: 1px;
 }
@@ -20,7 +22,6 @@ h3 {
 }
 
 .hero>h1 {
-  font-family: 'Work Sans', sans-serif;
   font-size: 5rem;
   line-height: 6.5rem;
 }
@@ -66,4 +67,8 @@ h3 {
 .modal.visible aside {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+}
+
+.lodging a:hover {
+  text-decoration: none;
 }
