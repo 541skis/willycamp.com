@@ -62,24 +62,11 @@
 
     for (var i = 0; i < inputs.length; i++) {
       var e = inputs[i];
+      var name = e.name;
+      var value = (e.type === 'checkbox') ? e.checked : e.value;
 
-      switch (e.type) {
-        case 'text':
-        case 'tel':
-        case 'email':
-          var v = encodeURIComponent(e.value);
-
-          if (v) {
-            params += '&' + encodeURIComponent(e.name) +
-              '=' + encodeURIComponent(e.value);
-          }
-
-          break;
-        case 'checkbox':
-          params += '&' + encodeURIComponent(e.name) +
-            '=' + encodeURIComponent(e.checked);
-
-          break;
+      if (value) {
+        params += '&' + encodeURIComponent(name) + '=' + encodeURIComponent(value);
       }
     }
 
