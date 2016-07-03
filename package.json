@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server -o",
-    "build": "mkdir -p dist/ && inliner -i --skip-absolute-urls index.html > dist/index.html && cp -vr downloads img dist/"
+    "build": "mkdir -p dist/ && inliner -i --skip-absolute-urls index.html > dist/index.html && cp -vr downloads img favicon.ico dist/"
   },
   "author": "",
   "license": "ISC",
