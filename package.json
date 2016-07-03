@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -o",
+    "build": "mkdir -p dist/ && inliner -i --skip-absolute-urls index.html > dist/index.html && cp -vr downloads img favicon.ico dist/"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +13,9 @@
     "bigfishtv-turret": "^3.3.1",
     "ideal-image-slider": "^1.5.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "inliner": "^1.9.2"
   }
 }
