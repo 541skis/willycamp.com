@@ -47,6 +47,14 @@
 })();
 
 (function() {
+  new MultiDatePicker({
+    dates: [ 'Jul 11, 2016', 'Jul 12, 2016', 'Jul 13, 2016', 'Jul 14, 2016', 'Jul 15, 2016' ],
+    xAlign: 'auto',
+    yAdjust: '-5px'
+  });
+})();
+
+(function() {
   var form = document.getElementById('js-form');
   var formSubmitButton = document.getElementById('js-form-submit-button');
 
