@@ -73,9 +73,11 @@
       var name = e.name;
       var value = (e.type === 'checkbox') ? e.checked : e.value;
 
-      if (value) {
-        params += '&' + encodeURIComponent(name) + '=' + encodeURIComponent(value);
+      if (!value) {
+        value = '';
       }
+
+      params += '&' + encodeURIComponent(name) + '=' + encodeURIComponent(value);
     }
 
     window[callback] = function(data) {
