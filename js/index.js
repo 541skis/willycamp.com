@@ -49,8 +49,9 @@
 (function() {
   new MultiDatePicker({
     dates: [ 'Jul 11, 2016', 'Jul 12, 2016', 'Jul 13, 2016', 'Jul 14, 2016', 'Jul 15, 2016' ],
-    xAlign: 'auto',
-    yAdjust: '-5px'
+    align: 'left',
+    marginSides: '1.6rem',
+    marginTop: '-5px'
   });
 })();
 
