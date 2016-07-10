@@ -58,6 +58,7 @@
 (function() {
   var form = document.getElementById('js-form');
   var formSubmitButton = document.getElementById('js-form-submit-button');
+  var submitText = formSubmitButton.innerHTML;
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -82,7 +83,9 @@
     }
 
     window[callback] = function(data) {
-      formSubmitButton.innerHTML = 'Submit Another';
+      formSubmitButton.type = 'reset';
+      formSubmitButton.innerHTML = 'Success';
+      formSubmitButton.classList.add('success');
       formSubmitButton.disabled = false;
 
       delete window[callback];
@@ -91,5 +94,11 @@
 
     script.src = form.action + '?callback=' + callback + params;
     document.body.appendChild(script);
+  }, false);
+
+  form.addEventListener('reset', function(e) {
+    formSubmitButton.type = 'submit';
+    formSubmitButton.innerHTML = submitText;
+    formSubmitButton.classList.remove('success');
   }, false);
 })();
