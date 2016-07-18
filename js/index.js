@@ -48,7 +48,7 @@
 
 (function() {
   new MultiDatePicker({
-    dates: [ 'Jul 11, 2016', 'Jul 12, 2016', 'Jul 13, 2016', 'Jul 14, 2016', 'Jul 15, 2016' ],
+    dates: [ 'Aug 1, 2016', 'Aug 2, 2016', 'Aug 3, 2016', 'Aug 4, 2016', 'Aug 5, 2016' ],
     align: 'left',
     marginSides: '1.6rem',
     marginTop: '87px'
