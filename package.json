@@ -2,7 +2,12 @@
   "private": true,
   "scripts": {
     "start": "http-server -o",
-    "build": "mkdir -p dist/ && inliner -i --skip-absolute-urls index.html > dist/index.html && cp -vr downloads img favicon.ico dist/"
+    "create-dist": "rm -rf dist/ && mkdir -p dist/",
+    "copy-files": "cp -vr downloads img favicon.ico dist/",
+    "inline": "inliner -i --skip-absolute-urls index.html > tmp.index.html",
+    "minify": "html-minifier --minify-css --minify-js --collapse-whitespace --remove-comments --html5 tmp.index.html > dist/index.html",
+    "clean": "rm -rf tmp.*",
+    "build": "run-s create-dist copy-files inline minify clean"
   },
   "dependencies": {
     "bigfishtv-turret": "^3.3.1",
@@ -11,7 +16,9 @@
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
   },
   "devDependencies": {
+    "html-minifier": "^3.1.0",
     "http-server": "^0.9.0",
-    "inliner": "^1.9.4"
+    "inliner": "^1.9.4",
+    "npm-run-all": "^3.1.1"
   }
 }

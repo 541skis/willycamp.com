@@ -2,16 +2,18 @@
 
 ol>li,
 ul>li {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
 }
 
 h1,
 h2,
 h3 {
   color: #555;
-  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
+  letter-spacing: .1em;
+  font-family: 'Work Sans', sans-serif;
 }
 
 h2 {
@@ -37,8 +39,8 @@ h3 {
 }
 
 .hero>span {
-  font-family: 'Work Sans', sans-serif;
   font-size: 2.5rem;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .lead>a {
@@ -50,24 +52,24 @@ h3 {
 }
 
 .profile-img {
-  filter: grayscale(100%);
   opacity: .9;
+  filter: grayscale(100%);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .modal {
   position: fixed;
-  transition: 0.3s;
+  z-index: 10;
+  visibility: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  visibility: hidden;
-  z-index: 10;
+  transition: 0.3s;
 }
 
 .modal.visible {
-  opacity: 1;
 	visibility: visible;
+  opacity: 1;
 }
 
 .modal aside {
@@ -75,15 +77,15 @@ h3 {
   top: 50%;
   left: 50%;
   width: 100%;
-  transition: 0.3s;
-  transform: translate(-50%, -50%) scale(0.8);
   border-radius: 3px;
   opacity: 0;
+  transition: 0.3s;
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 .modal.visible aside {
-  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .lodging a:hover {
