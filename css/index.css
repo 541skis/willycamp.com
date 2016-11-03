@@ -12,8 +12,12 @@ h3 {
   color: #555;
   text-transform: uppercase;
   letter-spacing: 1px;
-  letter-spacing: .1em;
   font-family: 'Work Sans', sans-serif;
+}
+
+h2,
+h3 {
+  letter-spacing: .1em;
 }
 
 h2 {
