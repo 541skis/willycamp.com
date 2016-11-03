@@ -14,8 +14,12 @@ h3 {
   letter-spacing: 1px;
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .hero {
@@ -37,8 +41,19 @@ h3 {
   font-size: 2.5rem;
 }
 
+.lead>a {
+  color: inherit;
+}
+
 .slider {
   border-radius: 3px;
+}
+
+.profile-img {
+  filter: grayscale(100%);
+  opacity: .9;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .modal {

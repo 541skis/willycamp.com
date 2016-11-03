@@ -1,14 +1,9 @@
 {
-  "name": "willycamp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "http-server -o",
     "build": "mkdir -p dist/ && inliner -i --skip-absolute-urls index.html > dist/index.html && cp -vr downloads img favicon.ico dist/"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bigfishtv-turret": "^3.3.1",
     "ideal-image-slider": "^1.5.1",
