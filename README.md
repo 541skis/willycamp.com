@@ -1,6 +1,6 @@
 # Willy Camp
-[![Release](https://img.shields.io/badge/website-willycamp.com-lightgrey.svg)](https://willycamp.com)
-[![Release](https://img.shields.io/github/release/cadejscroggins/willycamp.com.svg)](https://github.com/cadejscroggins/willycamp.com/releases)
+
+[![Website](https://img.shields.io/badge/website-willycamp.com-lightgrey.svg)](https://willycamp.com)
 
 This website was built for my uncle&rsquo;s ski camp. Users can get info about the camp and register.
 
