@@ -12,7 +12,7 @@
   "dependencies": {
     "bigfishtv-turret": "^3.3.1",
     "ideal-image-slider": "^1.5.1",
-    "multi-date-picker": "^2.0.9",
+    "multi-date-picker": "^2.0.10",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
   },
   "devDependencies": {
