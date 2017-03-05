@@ -48,7 +48,7 @@
 
 (function() {
   new MultiDatePicker({
-    dates: [ 'Aug 1, 2016', 'Aug 2, 2016', 'Aug 3, 2016', 'Aug 4, 2016', 'Aug 5, 2016' ],
+    dates: [ 'Jul 17, 2017', 'Jul 18, 2017', 'Jul 19, 2017', 'Jul 20, 2017', 'Jul 21, 2017' ],
     align: 'left',
     marginSides: '1.6rem',
     marginTop: '87px'
@@ -73,13 +73,22 @@
     for (var i = 0; i < inputs.length; i++) {
       var e = inputs[i];
       var name = e.name;
-      var value = (e.type === 'checkbox') ? e.checked : e.value;
+      var value = false;
 
-      if (!value) {
-        value = '';
+      switch (e.type) {
+        case 'checkbox':
+          value = e.checked;
+          break;
+        case 'radio':
+          if (e.checked) value = e.value;
+          break;
+        default:
+          value = e.value ? e.value : '';
       }
 
-      params += '&' + encodeURIComponent(name) + '=' + encodeURIComponent(value);
+      if (value !== false) {
+        params += '&' + encodeURIComponent(name) + '=' + encodeURIComponent(value);
+      }
     }
 
     window[callback] = function(data) {

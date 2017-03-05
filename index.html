@@ -98,14 +98,21 @@
             <div class="row">
               <div class="column-1 margin-top-medium">
                 <table class="no-margin">
-                  <caption class="bold-font"><span style="text-decoration:line-through">Willy Camp</span> <span class="text-error">Completed</span> <button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="willy-camp">View Schedule &amp; Info</button></caption>
+                  <caption class="bold-font margin-bottom-small">
+                    <span>Willy Camp</span><!-- <span class="text-error">Completed</span> --><button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="willy-camp">View Schedule &amp; Info</button>
+                    <p>Younger athletes must have the ability to comfortably ski on challenging hard snow and manage themselves up and down from the lodge to the training venue on Palmer.</p>
+                  </caption>
                   <tr>
                     <th>Dates</th>
-                    <td>August 1st&ndash;5th</td>
+                    <td>July 17th&ndash;21st</td>
                   </tr>
                   <tr>
-                    <th>Price</th>
-                    <td>$720</td>
+                    <th>Week Price</th>
+                    <td>$740</td>
+                  </tr>
+                  <tr>
+                    <th>Day Price</th>
+                    <td>$170</td>
                   </tr>
                   <tr>
                     <th>Ticket</th>
@@ -113,39 +120,66 @@
                   </tr>
                 </table>
               </div>
+            </div>
 
-              <div class="cover no-padding modal" id="js-modal-willy-camp">
-                <aside class="padding-medium max-width-small background-white">
-                  <p class="font-size-small">Pick up your <span class="bold-font">ticket at 6:30</span> by Smokey the Bear (on the stairs to the second floor of the day lodge). Meet out <span class="bold-font">on the hill by 7:30</span>. Look for our lane under Willy Camp on the white board at the top of Palmer. Training will continue until 11:00 or until conditions deteriorate. <span class="bold-font">Bring your own lunch, water and sunscreen</span>.</p>
-
-                  <table class="no-margin">
-                    <tr>
-                      <th>Monday</th>
-                      <td>GS fundamentals w/ SL skis</td>
-                    </tr>
-                    <tr>
-                      <th>Tuesday</th>
-                      <td>GS</td>
-                    </tr>
-                    <tr>
-                      <th>Wednesday</th>
-                      <td>GS</td>
-                    </tr>
-                    <tr>
-                      <th>Thursday</th>
-                      <td>SL</td>
-                    </tr>
-                    <tr>
-                      <th>Friday</th>
-                      <td>SL</td>
-                    </tr>
-                  </table>
-
-                  <div class="margin-top-small text-center">
-                    <button class="button-primary button-small modal-toggle" data-modal="willy-camp">Sounds Good</button>
-                  </div>
-                </aside>
+            <div class="row">
+              <div class="column-1 margin-top-medium">
+                <table class="no-margin">
+                  <caption class="bold-font margin-bottom-small">
+                    <span>Ladies Camp</span><!-- <span class="text-error">Completed</span> --><button class="button button-primary button-xsmall right regular-font modal-toggle" data-modal="willy-camp">View Schedule &amp; Info</button>
+                    <p>This camp is for masters women who would like to learn in a less intimadating environment among their peers with lead coach Hailey Duke. Must have a minimum of 6 athletes registered with a maximum of 12.</p>
+                  </caption>
+                  <tr>
+                    <th>Dates</th>
+                    <td>July 17th&ndash;21st</td>
+                  </tr>
+                  <tr>
+                    <th>Week Price</th>
+                    <td>$740</td>
+                  </tr>
+                  <tr>
+                    <th>Day Price</th>
+                    <td>Not Applicable</td>
+                  </tr>
+                  <tr>
+                    <th>Ticket</th>
+                    <td>Included</td>
+                  </tr>
+                </table>
               </div>
+            </div>
+
+            <div class="cover no-padding modal" id="js-modal-willy-camp">
+              <aside class="padding-medium max-width-small background-white">
+                <p>Pick up your <span class="bold-font">ticket at 6:30</span> by Smokey the Bear (on the stairs to the second floor of the day lodge). Meet out <span class="bold-font">on the hill by 7:30</span>. Look for our lane under Willy Camp on the white board at the top of Palmer. Training will continue until 11:00 or until conditions deteriorate. <span class="bold-font">Bring your own lunch, water and sunscreen</span>.</p>
+
+                <table class="no-margin">
+                  <tr>
+                    <th>Monday</th>
+                    <td>GS fundamentals w/ SL skis</td>
+                  </tr>
+                  <tr>
+                    <th>Tuesday</th>
+                    <td>GS</td>
+                  </tr>
+                  <tr>
+                    <th>Wednesday</th>
+                    <td>SL</td>
+                  </tr>
+                  <tr>
+                    <th>Thursday</th>
+                    <td>Full Length SL w/ Freelap Timing</td>
+                  </tr>
+                  <tr>
+                    <th>Friday</th>
+                    <td>Full length GS w/ Freelap Timing</td>
+                  </tr>
+                </table>
+
+                <div class="margin-top-small text-center">
+                  <button class="button-primary button-small modal-toggle" data-modal="willy-camp">Sounds Good</button>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
@@ -175,13 +209,14 @@
               </div>
 
               <div class="row">
-                <!-- <label class="hide"><input type="checkbox" name="Willy Camp" checked="true">Willy Camp (High School)</label>
-                <label class="column-center"><input type="checkbox" name="Willy Camp">Willy Camp</label>
-                <label class="column-center"><input type="checkbox" name="Willy Fast Ladies">Ladies Camp</label> -->
+                <div class="column-center">
+                  <label class="left margin-right-small"><input type="radio" name="Camp Name" value="Willy Camp" required>Willy Camp</label>
+                  <label class="left"><input type="radio" name="Camp Name" value="Ladies Camp" required>Ladies Camp</label>
+                </div>
               </div>
 
               <div class="row">
-                <label class="column-1">Exact Days (If Applicable)<input id="mdp" type="text" name="Exact Days" placeholder="e.g. 6/11/2016, 6/12/2016"></label>
+                <label class="column-1">Exact Days (If Applicable)<input id="mdp" type="text" name="Exact Days" placeholder="e.g. 7/17/2017, 7/18/2017"></label>
               </div>
 
               <div class="margin-top-medium text-center">
@@ -201,7 +236,7 @@
               </div>
 
               <div class="margin-top-large text-center">
-                <button disabled="true" class="button-large button-inverse padding-left-medium padding-right-medium" id="js-form-submit-button" type="submit">Submit</button>
+                <button class="button-large button-inverse padding-left-medium padding-right-medium" id="js-form-submit-button" type="submit">Submit</button>
               </div>
             </form>
           </div>
@@ -322,7 +357,7 @@
         </ul>
       </nav>
 
-      <small class="display-block font-size-xsmall text-light-grey">&copy; 2016 Willy Camp // Website by <a class="text-light-grey" href="https://cadejs.com">Cade Scroggins</a></small>
+      <small class="display-block font-size-xsmall text-light-grey">&copy; 2017 Willy Camp</small>
     </footer>
 
     <script src="node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>

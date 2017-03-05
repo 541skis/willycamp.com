@@ -12,15 +12,19 @@ function doGet(e) {
     MailApp.sendEmail(
       e.parameters['Email Address'],
       'Willy Camp Registration Confirmation',
-      'Hi, ' + e.parameters['First Name'] + '!\n\r' +
-        'Thanks for signing up! Feel free to reply to this email with any questions.\n\r'
+      'Hi, ' + e.parameters['First Name'] + '!\n\n' +
+        'Thanks for signing up for Willy Camp!\n' +
+        'Feel free to reply to this email with any questions.\n\n' +
+        'See you soon,\n' +
+        'The Willy Camp Team',
+      { name: 'Willy Camp' }
     );
 
     MailApp.sendEmail(
       'awillygoodcamp@gmail.com',
       'New Willy Camp Registration',
       e.parameters['First Name'] + ' ' + e.parameters['Last Name'] +
-        ' just registered. Check out all registrations below.\n\r' +
+        ' just registered. Check out all registrations below.\n\n' +
         'https://docs.google.com/spreadsheets/d/1A15LqjGThBQRdqg9glpWpk73beUR9D3Kr-cwln0XXUQ/'
     );
 
