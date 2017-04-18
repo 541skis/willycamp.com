@@ -11,7 +11,7 @@ function doGet(e) {
 
     MailApp.sendEmail(
       e.parameters['Email Address'],
-      e.parameters['Camp Name'] + ' Registration Confirmation',
+      'Camp Registration Confirmation',
       'Hi, ' + e.parameters['First Name'] + '!\n\n' +
         'Thanks for signing up for camp!\n' +
         'Feel free to reply to this email with any questions.\n\n' +
