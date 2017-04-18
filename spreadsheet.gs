@@ -13,7 +13,7 @@ function doGet(e) {
       e.parameters['Email Address'],
       e.parameters['Camp Name'] + ' Registration Confirmation',
       'Hi, ' + e.parameters['First Name'] + '!\n\n' +
-        'Thanks for signing up for ' + e.parameters['Camp Name'] + '!\n' +
+        'Thanks for signing up for camp!\n' +
         'Feel free to reply to this email with any questions.\n\n' +
         'See you soon,\n' +
         'The Willy Camp Team',
@@ -64,7 +64,8 @@ function recordData(e) {
 
     for (var i = 1; i < headers.length; i++) {
       if (headers[i].length > 0) {
-        row.push(e.parameter[headers[i]]);
+        var value = e.parameter[headers[i]];
+        row.push(value ? value : '');
       }
     }
 
