@@ -1,7 +1,5 @@
 # Willy Camp
 
-[![Website](https://img.shields.io/badge/website-willycamp.com-lightgrey.svg)](https://willycamp.com)
-
 This website was built for my uncle&rsquo;s ski camp. Users can get info about the camp and register.
 
 ## Development Setup
