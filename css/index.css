@@ -28,6 +28,11 @@ h3 {
   font-size: 2rem;
 }
 
+label {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
 .hero {
   background: url('../img/bg.jpg') no-repeat center center #555;
   background-size: cover;
@@ -43,7 +48,7 @@ h3 {
 }
 
 .hero>span {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -94,4 +99,18 @@ h3 {
 
 .lodging a:hover {
   text-decoration: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.button-large {
+  padding: 1em 2em;
+  height: auto;
+}
+
+.lead {
+  font-size: 2.5em;
+  line-height: 1.8em;
 }
