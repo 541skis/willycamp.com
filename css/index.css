@@ -62,9 +62,6 @@ label {
 
 .profile-img {
   opacity: .9;
-  filter: grayscale(100%);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .modal {
@@ -113,4 +110,23 @@ label {
 .lead {
   font-size: 2.5em;
   line-height: 1.8em;
+}
+
+.max-width-smaller {
+	max-width: 400px;
+}
+
+.max-width-larger {
+	max-width: 1500px;
+}
+
+.auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.flex {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
