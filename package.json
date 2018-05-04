@@ -3,7 +3,7 @@
   "scripts": {
     "start": "http-server -o",
     "create-dist": "rm -rf dist/ && mkdir -p dist/",
-    "copy-files": "cp -vr downloads img favicon.ico dist/",
+    "copy-files": "cp -vr CNAME downloads img favicon.ico dist/",
     "inline": "inliner -i --skip-absolute-urls index.html > tmp.index.html",
     "minify": "html-minifier --minify-css --minify-js --collapse-whitespace --remove-comments --html5 tmp.index.html > dist/index.html",
     "clean": "rm -rf tmp.*",
