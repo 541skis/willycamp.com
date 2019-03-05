@@ -5,15 +5,12 @@
     "create-dist": "rm -rf dist/ && mkdir -p dist/",
     "copy-files": "cp -vr CNAME img favicon.ico dist/",
     "inline": "inliner -i --skip-absolute-urls index.html > tmp.index.html",
-    "minify": "html-minifier --minify-css --minify-js --collapse-whitespace --remove-comments --html5 tmp.index.html > dist/index.html",
+    "minify": "html-minifier --minify-css --minify-js --collapse-whitespace --remove-comments tmp.index.html > dist/index.html",
     "clean": "rm -rf tmp.*",
     "build": "run-s create-dist copy-files inline minify clean"
   },
   "dependencies": {
-    "bigfishtv-turret": "^3.3.1",
-    "ideal-image-slider": "^1.5.1",
-    "multi-date-picker": "^2.0.10",
-    "smooth-scroll": "github:cferdinandi/smooth-scroll"
+    "multi-date-picker": "^2.0.10"
   },
   "devDependencies": {
     "html-minifier": "^3.1.0",
