@@ -33,6 +33,19 @@ label {
   text-transform: uppercase;
 }
 
+.button {
+  box-shadow: rgba(14, 14, 33, 0.25) 0 22px 44px 0;
+}
+
+.text-light-grey {
+  color: #aaa!important;
+}
+
+.font-size-xsmall {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .hero {
   background: url('../img/bg.jpg') no-repeat center center #555;
   background-size: cover;
@@ -58,10 +71,11 @@ label {
 
 .slider {
   border-radius: 3px;
+  box-shadow: rgba(14, 14, 33, 0.25) 0 22px 44px 0;
 }
 
 .profile-img {
-  opacity: .9;
+  box-shadow: rgba(14, 14, 33, 0.25) 0 22px 44px 0;
 }
 
 .modal {
@@ -74,7 +88,7 @@ label {
 }
 
 .modal.visible {
-	visibility: visible;
+  visibility: visible;
   opacity: 1;
 }
 
@@ -113,20 +127,20 @@ label {
 }
 
 .max-width-smaller {
-	max-width: 400px;
+  max-width: 400px;
 }
 
 .max-width-larger {
-	max-width: 1500px;
+  max-width: 1500px;
 }
 
 .auto {
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .flex {
   display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
