@@ -150,6 +150,10 @@ label {
   align-items: center;
 }
 
+.coaches > div > img {
+  flex-shrink: 0;
+}
+
 .coaches > div > div > p {
   margin-top: 0.5rem;
 }
