@@ -9,7 +9,6 @@ ul>li {
 h1,
 h2,
 h3 {
-  color: #555;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Work Sans', sans-serif;
@@ -18,6 +17,7 @@ h3 {
 h2,
 h3 {
   letter-spacing: .1em;
+  color: #333;
 }
 
 h2 {
@@ -143,4 +143,13 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.coaches>div {
+  display: flex;
+  align-items: center;
+}
+
+.coaches>div>div>p {
+  margin-top: 0.5rem;
 }

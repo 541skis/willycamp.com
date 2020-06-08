@@ -9,9 +9,6 @@
     "clean": "rm -rf tmp.*",
     "build": "run-s create-dist copy-files inline minify clean"
   },
-  "dependencies": {
-    "multi-date-picker": "^2.0.12"
-  },
   "devDependencies": {
     "html-minifier": "^4.0.0",
     "http-server": "^0.12.3",
